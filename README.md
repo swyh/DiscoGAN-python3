@@ -15,18 +15,15 @@ Official implement : [https://github.com/SKTBrain/DiscoGAN](https://github.com/S
 - 기존 DiscoGAN github 참조
 
 ### Training
-- [기존 코드](https://github.com/SKTBrain/DiscoGAN)를 다운로드한 뒤, python3로 작성된 image_translation.py, dataset.py를 덮어쓰기
+- [기존 코드](https://github.com/SKTBrain/DiscoGAN)를 다운로드한 뒤, discogan 폴더 안에 python3로 작성된 위 code로 덮어쓰기
 - 실행 : task_name에서 작은 따음표를 제외한 뒤 입력
     
       $ python ./discogan/image_translation.py --task_name=edges2handbags
     
 
 ### Test (개발 중)
-- 저장된 model을 불러와 datasetA => datasetB 생성
+- 저장된 model을 불러와 반대 dataset 생성
 
-      $ python ./discogan/load.py
+      $ python ./discogan/load.py --epoch=-3.0 --type=A
     
-## Add it in the future
-- traing checkpoint model 이어서 시키기
-- image size에 따라 layer 재구성
-- python3 code로 정리
+- 이 외에도 result_path, input_path, model_path 설정 가능
