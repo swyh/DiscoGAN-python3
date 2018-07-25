@@ -11,6 +11,7 @@ Official implement : [https://github.com/SKTBrain/DiscoGAN](https://github.com/S
 - OpenCV
 
 ## Execution
+
 ### Dataset Download
 - 기존 DiscoGAN github 참조
 
@@ -21,7 +22,7 @@ Official implement : [https://github.com/SKTBrain/DiscoGAN](https://github.com/S
       $ python ./discogan/image_translation.py --task_name=edges2handbags
     
 
-### Test (개발 중)
+### Test
 - 저장된 model을 불러와 반대 dataset 생성
 
       $ python ./discogan/load.py --epoch=-3.0 --type=A
