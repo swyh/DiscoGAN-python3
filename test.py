@@ -67,7 +67,7 @@ def save_image(name, images):
     for i in range(0, len(images)):
         print("save image")
         image = images[i].cpu().data.numpy().transpose(1, 2, 0) * 255.
-        misc.imsave(result_path + name + "_" + str(i) + '.jpg', image.astype(np.uint8)[:, :, ::-1])
+        misc.imsave(os.path.join(result_path, name + "_" + str(i) + '.jpg'), image.astype(np.uint8)[:, :, ::-1])
 
 
 def main():
