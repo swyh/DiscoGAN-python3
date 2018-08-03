@@ -1,4 +1,5 @@
 # DiscoGAN_python3
+python2로 작성된 code를 python3로 변환, test 기능 추가<br>
 
 Official paper : [https://arxiv.org/pdf/1703.05192.pdf](https://arxiv.org/pdf/1703.05192.pdf) <br>
 Official implement : [https://github.com/SKTBrain/DiscoGAN](https://github.com/SKTBrain/DiscoGAN)
